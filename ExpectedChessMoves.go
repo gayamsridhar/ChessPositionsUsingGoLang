@@ -35,7 +35,7 @@ func main() {
 	var nextMoves string
 	fmt.Print("\n-----------------START---------------")
 	for 1 > 0 {
-		fmt.Print("\n Please select a chess piece using short code(Q-Queen, R-Rook, N-Knight): ")
+		fmt.Print("\n Please select(type) a chess piece using short code(Q-Queen, R-Rook, N-Knight): ")
 		fmt.Scanln(&cPiece)
 		if cPiece == "Q" || cPiece == "N" || cPiece == "R" || cPiece == "q" || cPiece == "n" || cPiece == "r" {
 			fmt.Println("\n Selected chess peice is: ", cPiece)
