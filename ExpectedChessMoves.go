@@ -37,7 +37,7 @@ func main() {
 	for 1 > 0 {
 		fmt.Print("\n Please select a chess piece using short code(Q-Queen, R-Rook, N-Knight): ")
 		fmt.Scanln(&cPiece)
-		if cPiece == "Q" || cPiece == "N" || cPiece == "R" {
+		if cPiece == "Q" || cPiece == "N" || cPiece == "R" || cPiece == "q" || cPiece == "n" || cPiece == "r" {
 			fmt.Println("\n Selected chess peice is: ", cPiece)
 			break
 		} else {
@@ -72,7 +72,7 @@ func main() {
 		}
 	}
 
-	if cPiece == "N" {
+	if cPiece == "N" || cPiece == "n" {
 		fmt.Print("\n \n-----------------Potential Board Postions---------------")
 		// All possible moves of a knight
 		X := [8]int8{2, 1, -1, -2, -2, -1, 1, 2}
@@ -95,7 +95,7 @@ func main() {
 		fmt.Print("\n \n List of all the potential board postions of the Knight : ", nextMoves)
 	}
 
-	if cPiece == "R" {
+	if cPiece == "R" || cPiece == "r" {
 		fmt.Print("\n \n-----------------Potential Board Postions---------------")
 		// All possible moves of a Rook
 		X := [14]int8{-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7}
@@ -130,7 +130,7 @@ func main() {
 		fmt.Print("\n \n List of all the potential board postions of the Rook : ", nextMoves)
 	}
 
-	if cPiece == "Q" {
+	if cPiece == "Q" || cPiece == "q" {
 		fmt.Print("\n \n-----------------Potential Board Postions---------------")
 		// All possible moves of a Queen
 		X := [14]int8{-7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6, 7}
