@@ -35,7 +35,7 @@ func main() {
 	var nextMoves string
 	fmt.Print("\n-----------------START---------------")
 	for 1 > 0 {
-		fmt.Print("\n Please select a chess peice using short code(Queen-Q, Rook-R, Knight-N): ")
+		fmt.Print("\n Please select a chess piece using short code(Queen-Q, Rook-R, Knight-N): ")
 		fmt.Scanln(&cPeice)
 		if cPeice == "Q" || cPeice == "N" || cPeice == "R" {
 			fmt.Println("\n Selected chess peice is: ", cPeice)
@@ -47,7 +47,7 @@ func main() {
 
 	fmt.Print("\n-----------------Alphabet Position---------------")
 	for 1 > 0 {
-		fmt.Print("\n Please select alphabet position of the choosen peice (slect in between A-H) : ")
+		fmt.Print("\n Please select alphabet position of the choosen piece (select in between A-H) : ")
 		currentPositionAlphabet := bufio.NewReader(os.Stdin)
 		charCPA, _, _ = currentPositionAlphabet.ReadRune()
 		if checkAlphaChar(charCPA) {
@@ -61,11 +61,11 @@ func main() {
 
 	fmt.Print("\n \n-----------------Number Position---------------")
 	for 1 > 0 {
-		fmt.Print("\n Please select number position of the choosen peice is(slect in between 1-8) : ")
+		fmt.Print("\n Please select number position of the choosen piece is(select in between 1-8) : ")
 		fmt.Scanln(&currentPositionNumber)
 
 		if checkNumber(currentPositionNumber) {
-			fmt.Print("\n Number Position of the given peice : ", currentPositionNumber)
+			fmt.Print("\n Number Position of the given piece : ", currentPositionNumber)
 			break
 		} else {
 			fmt.Println("****", currentPositionNumber, "is not a valid Number Position. Please enter again******")
