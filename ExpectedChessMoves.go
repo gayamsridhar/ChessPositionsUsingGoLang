@@ -73,7 +73,7 @@ func main() {
 	}
 
 	if cPiece == "N" || cPiece == "n" {
-		fmt.Print("\n \n-----------------Potential Board Postions---------------")
+		fmt.Print("\n \n-----------------Potential Board Positions---------------")
 		// All possible moves of a knight
 		X := [8]int8{2, 1, -1, -2, -2, -1, 1, 2}
 		Y := [8]int8{1, 2, 2, 1, -1, -2, -2, -1}
@@ -91,8 +91,8 @@ func main() {
 				count++
 			}
 		}
-		fmt.Print("\n \n Total number of potential board postions of the Knight: ", count)
-		fmt.Print("\n \n List of all the potential board postions of the Knight : ", nextMoves)
+		fmt.Print("\n \n Total number of potential board positions of the Knight: ", count)
+		fmt.Print("\n \n List of all the potential board positions of the Knight : ", nextMoves)
 	}
 
 	if cPiece == "R" || cPiece == "r" {
@@ -126,8 +126,8 @@ func main() {
 			}
 		}
 
-		fmt.Print("\n \n Total number of potential board postions of the Rook: ", count)
-		fmt.Print("\n \n List of all the potential board postions of the Rook : ", nextMoves)
+		fmt.Print("\n \n Total number of potential board positions of the Rook: ", count)
+		fmt.Print("\n \n List of all the potential board positions of the Rook : ", nextMoves)
 	}
 
 	if cPiece == "Q" || cPiece == "q" {
@@ -185,8 +185,8 @@ func main() {
 			}
 		}
 
-		fmt.Print("\n \n Total number of potential board postions of the Queen: ", count)
-		fmt.Print("\n \n List of all the potential board postions of the Queen : ", nextMoves)
+		fmt.Print("\n \n Total number of potential board positions of the Queen: ", count)
+		fmt.Print("\n \n List of all the potential board positions of the Queen : ", nextMoves)
 	}
 	fmt.Print("\n-----------------END---------------")
 }
