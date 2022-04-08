@@ -1,0 +1,4 @@
+1) Please install go
+2) Please clone this repository to the local machine
+3) Open a command prompt and navigate to the folder which contains the ExpectedChessMoves.go file and execute the below command
+go run ExpectedChessMoves.go
